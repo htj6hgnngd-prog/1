@@ -2,232 +2,169 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Студия фото и видеопроизводства для деловых и частных мероприятий в Москве." />
-  <title>[Название] | Фото и видео мероприятий</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Фото, видео и быстрый контент для деловых и частных мероприятий в Москве. Одна команда, один продюсер, единый визуальный язык." />
+  <meta name="theme-color" content="#0a0a09" />
+  <title>[НАЗВАНИЕ] | Event Content Production</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="page-noise" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
 
   <header class="site-header" data-header>
     <a class="brand" href="#top" aria-label="На главную">
-      <span>[ НАЗВАНИЕ ]</span>
+      <span>[НАЗВАНИЕ]</span>
       <small>EVENT CONTENT PRODUCTION</small>
     </a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span>Меню</span>
-      <i aria-hidden="true"></i>
-    </button>
-    <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
-      <a href="#projects">Проекты</a>
-      <a href="#capabilities">Возможности</a>
-      <a href="#prices">Стоимость</a>
-      <a class="header-cta" href="#inquiry">Обсудить событие</a>
+    <div class="header-center" aria-hidden="true">MOSCOW / RUSSIA</div>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#work">Проекты</a>
+      <a href="#scope">Что снимаем</a>
+      <a href="#formats">Форматы</a>
+      <a class="nav-cta" href="#brief">Рассчитать</a>
     </nav>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+      <span>MENU</span><i></i>
+    </button>
   </header>
 
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav aria-label="Мобильная навигация">
+      <a href="#work"><span>01</span>Проекты</a>
+      <a href="#scope"><span>02</span>Что снимаем</a>
+      <a href="#formats"><span>03</span>Форматы</a>
+      <a href="#brief"><span>04</span>Рассчитать</a>
+    </nav>
+  </div>
+
   <main id="top">
-    <section class="opening" aria-labelledby="opening-title">
-      <div class="opening-media media-slot" aria-label="Место для главного showreel"></div>
-      <div class="opening-copy">
-        <p class="opening-index">Москва / работа по России</p>
-        <h1 id="opening-title">Фото и видео<br />событий</h1>
-        <div class="opening-side">
-          <p>Собираем съёмочную команду под программу мероприятия и выпускаем цельный комплект материалов.</p>
-          <a class="text-link" href="#inquiry">Получить расчёт <span>↗</span></a>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-topline">
+        <span>PHOTO / FILM / FAST CONTENT</span>
+        <span>ДЕЛОВЫЕ И ЧАСТНЫЕ СОБЫТИЯ</span>
+      </div>
+
+      <div class="hero-title-wrap">
+        <h1 id="hero-title">
+          <span>СОБЫТИЕ</span>
+          <span>ПРОХОДИТ.</span>
+          <span class="accent-line">КОНТЕНТ ОСТАЁТСЯ.</span>
+        </h1>
+      </div>
+
+      <div class="hero-bottom">
+        <p>Фото, фильм и вертикальный контент в одной съёмочной системе. Собираем команду под программу, площадку и скорость публикации.</p>
+        <div class="hero-actions">
+          <a class="primary-link" href="#brief"><span>Получить расчёт</span><b>↗</b></a>
+          <a class="secondary-link" href="#work">Смотреть проекты</a>
         </div>
       </div>
-      <a class="scroll-cue" href="#projects"><span>Смотреть проекты</span><i></i></a>
+
+      <div class="hero-media-shell" data-hero-media-shell>
+        <div class="hero-media media-slot" aria-label="Место для главного showreel"></div>
+      </div>
     </section>
 
-    <section class="project-index" id="projects" aria-labelledby="projects-title">
-      <div class="section-kicker">
-        <span>01 / Selected work</span>
-        <span>Фото + видео</span>
-      </div>
-      <div class="project-heading">
-        <h2 id="projects-title">Событие остаётся<br />в материале</h2>
-        <p>Не показываем набор случайных кадров. Каждый кейс раскрывает событие целиком: масштаб, людей, детали и результат.</p>
+    <section class="proof-strip" aria-label="Ключевые направления">
+      <div>PHOTO</div>
+      <div>FILM</div>
+      <div>FAST CONTENT</div>
+      <div>MULTICAM</div>
+      <div>PRODUCTION</div>
+    </section>
+
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="section-head">
+        <div class="section-index">01 / SELECTED WORK</div>
+        <h2 id="work-title">НЕ ПОРТФОЛИО.<br />ДОКАЗАТЕЛЬСТВО.</h2>
+        <p>Каждый кейс должен показывать событие целиком: масштаб, людей, детали, эмоцию, брендинг и итоговый набор материалов.</p>
       </div>
 
-      <div class="project-stage" data-project-stage>
-        <div class="project-preview media-slot" data-project-preview aria-label="Место для превью выбранного проекта"></div>
-        <ol class="project-list">
-          <li>
-            <button class="project-row is-active" type="button" data-project="conference">
-              <span class="project-number">01</span>
-              <span class="project-name">Бизнес-конференция</span>
-              <span class="project-meta">Фото / фильм / shorts</span>
-              <span class="project-arrow">↗</span>
-            </button>
-          </li>
-          <li>
-            <button class="project-row" type="button" data-project="award">
-              <span class="project-number">02</span>
-              <span class="project-name">Корпоративная премия</span>
-              <span class="project-meta">Фото / многокамерная съёмка</span>
-              <span class="project-arrow">↗</span>
-            </button>
-          </li>
-          <li>
-            <button class="project-row" type="button" data-project="private">
-              <span class="project-number">03</span>
-              <span class="project-name">Частное событие</span>
-              <span class="project-meta">Фото / highlights</span>
-              <span class="project-arrow">↗</span>
-            </button>
-          </li>
-          <li>
-            <button class="project-row" type="button" data-project="forum">
-              <span class="project-number">04</span>
-              <span class="project-name">Отраслевой форум</span>
-              <span class="project-meta">Два зала / экспресс-контент</span>
-              <span class="project-arrow">↗</span>
-            </button>
-          </li>
+      <div class="work-grid" data-work-grid>
+        <aside class="work-visual-wrap">
+          <div class="work-visual media-slot" data-work-visual aria-label="Место для превью выбранного проекта"></div>
+          <div class="work-visual-meta">
+            <span data-work-counter>01 / 04</span>
+            <span>HOVER / TAP TO SELECT</span>
+          </div>
+        </aside>
+
+        <ol class="work-list">
+          <li><button class="work-item is-active" type="button" data-work="conference"><span class="work-num">01</span><span class="work-name">Бизнес-конференция</span><span class="work-meta">PHOTO / FILM / SHORTS</span><span class="work-arrow">↗</span></button></li>
+          <li><button class="work-item" type="button" data-work="award"><span class="work-num">02</span><span class="work-name">Корпоративная премия</span><span class="work-meta">PHOTO / MULTICAM</span><span class="work-arrow">↗</span></button></li>
+          <li><button class="work-item" type="button" data-work="private"><span class="work-num">03</span><span class="work-name">Частное событие</span><span class="work-meta">PHOTO / HIGHLIGHTS</span><span class="work-arrow">↗</span></button></li>
+          <li><button class="work-item" type="button" data-work="forum"><span class="work-num">04</span><span class="work-name">Отраслевой форум</span><span class="work-meta">2 HALLS / FAST CONTENT</span><span class="work-arrow">↗</span></button></li>
         </ol>
       </div>
     </section>
 
-    <section class="capabilities" id="capabilities" aria-labelledby="capabilities-title">
-      <div class="section-kicker light">
-        <span>02 / Production scope</span>
-        <span>Одна точка ответственности</span>
+    <section class="scope" id="scope" aria-labelledby="scope-title">
+      <div class="scope-head">
+        <div class="section-index light">02 / PRODUCTION SCOPE</div>
+        <h2 id="scope-title">ОДНА КОМАНДА.<br />ОДИН ВИЗУАЛЬНЫЙ ЯЗЫК.</h2>
       </div>
-      <h2 class="visually-hidden" id="capabilities-title">Возможности студии</h2>
-      <div class="capability-line">
-        <span class="capability-name">PHOTO</span>
-        <p>Репортаж, портреты гостей, сцена, брендинг и быстрый отбор в день события.</p>
-      </div>
-      <div class="capability-line">
-        <span class="capability-name outline">FILM</span>
-        <p>Highlights, фильм события, интервью, запись звука и многокамерная съёмка.</p>
-      </div>
-      <div class="capability-line">
-        <span class="capability-name">FAST</span>
-        <p>Вертикальные ролики, фотографии для PR и монтаж для публикации во время мероприятия.</p>
-      </div>
-      <div class="capability-line minor">
-        <span class="capability-name">PLUS</span>
-        <p>По задаче подключаем свет, звук, трансляцию, сцену и артистов через партнёров.</p>
+      <div class="scope-list">
+        <article class="scope-row"><div class="scope-code">01</div><h3>PHOTO</h3><p>Репортаж, портреты гостей, сцена, детали, брендинг, backstage и быстрый отбор для PR.</p></article>
+        <article class="scope-row"><div class="scope-code">02</div><h3>FILM</h3><p>Highlights, фильм события, интервью, запись чистого звука, многокамерная съёмка.</p></article>
+        <article class="scope-row"><div class="scope-code">03</div><h3>FAST</h3><p>Вертикальные ролики и фотографии для публикации во время события или сразу после него.</p></article>
+        <article class="scope-row muted-row"><div class="scope-code">04</div><h3>SCALE</h3><p>Несколько залов, дополнительная камера, продюсер, свет, звук и другие специалисты под задачу.</p></article>
       </div>
     </section>
 
-    <section class="production-flow" aria-labelledby="flow-title">
-      <div class="flow-media media-slot" aria-label="Место для фотографии команды или backstage"></div>
-      <div class="flow-copy">
-        <div class="section-kicker">
-          <span>03 / Как работаем</span>
-          <span>От программы до выдачи</span>
-        </div>
-        <h2 id="flow-title">Команда входит<br />в ритм события</h2>
-        <ol class="flow-list">
-          <li><span>До</span><p>Разбираем программу, площадку, обязательные кадры и каналы публикации.</p></li>
-          <li><span>Во время</span><p>Фото и видео работают по одному плану. Продюсер контролирует материал и тайминг.</p></li>
-          <li><span>После</span><p>Передаём превью, затем полную серию, фильм и вертикальные версии.</p></li>
+    <section class="system" aria-labelledby="system-title">
+      <div class="system-media media-slot" aria-label="Место для backstage или фотографии команды"></div>
+      <div class="system-copy">
+        <div class="section-index">03 / HOW IT WORKS</div>
+        <h2 id="system-title">НЕ ПРОСТО СЪЁМКА.<br />COVERAGE SYSTEM.</h2>
+        <p class="system-lead">До площадки мы уже знаем, что должно попасть в кадр, что нужно отдать быстро и какие материалы будут жить после события.</p>
+        <ol class="system-steps">
+          <li><span>01 / BRIEF</span><p>Дата, программа, площадка, аудитория, обязательные эпизоды и каналы публикации.</p></li>
+          <li><span>02 / PLAN</span><p>Состав команды, схема работы, тайминг, техника, звук и план выдачи контента.</p></li>
+          <li><span>03 / SHOOT</span><p>Фото и видео работают по одному плану, не мешая программе и друг другу.</p></li>
+          <li><span>04 / RELEASE</span><p>Экспресс-материалы сначала, затем полный комплект в согласованной логике.</p></li>
         </ol>
       </div>
     </section>
 
-    <section class="prices" id="prices" aria-labelledby="prices-title">
-      <div class="section-kicker">
-        <span>04 / Стартовые форматы</span>
-        <span>Фото + видео</span>
+    <section class="formats" id="formats" aria-labelledby="formats-title">
+      <div class="section-head formats-head">
+        <div class="section-index">04 / STARTING FORMATS</div>
+        <h2 id="formats-title">ПОНЯТНАЯ ТОЧКА ВХОДА.<br />ДАЛЬШЕ МАСШТАБИРУЕМ.</h2>
+        <p>Стартовая стоимость даёт ориентир. Финальная смета зависит от длительности, количества площадок, состава команды и скорости выдачи.</p>
       </div>
-      <div class="prices-heading">
-        <h2 id="prices-title">Масштабируем<br />состав под задачу</h2>
-        <p>Финальная смета зависит от программы, количества залов, сроков и нужных форматов.</p>
+      <div class="format-list">
+        <details class="format" open><summary><span class="format-num">01</span><span class="format-name">Контент Старт</span><span class="format-hours">до 3 часов</span><span class="format-price">79 000 ₽</span><span class="format-toggle"></span></summary><div class="format-body"><span>Фотограф + оператор</span><span>От 150 фотографий</span><span>Ролик 60-90 секунд</span><span>1 вертикальное видео</span></div></details>
+        <details class="format"><summary><span class="format-num">02</span><span class="format-name">Контент День</span><span class="format-hours">до 6 часов</span><span class="format-price">125 000 ₽</span><span class="format-toggle"></span></summary><div class="format-body"><span>Фотограф + оператор</span><span>От 300 фотографий</span><span>Фильм 2-3 минуты</span><span>3 вертикальных видео</span></div></details>
+        <details class="format"><summary><span class="format-num">03</span><span class="format-name">Полное покрытие</span><span class="format-hours">до 8 часов</span><span class="format-price">165 000 ₽</span><span class="format-toggle"></span></summary><div class="format-body"><span>Фотограф + 2 оператора или продюсер</span><span>От 400 фотографий</span><span>Фильм 3-5 минут</span><span>5 вертикальных видео + запись звука</span></div></details>
       </div>
-      <div class="rate-sheet">
-        <details class="rate" open>
-          <summary>
-            <span class="rate-index">01</span>
-            <span class="rate-name">Контент Старт</span>
-            <span class="rate-hours">до 3 часов</span>
-            <span class="rate-price">79 000 ₽</span>
-            <span class="rate-mark" aria-hidden="true"></span>
-          </summary>
-          <div class="rate-body">
-            <p>Фотограф + оператор</p>
-            <p>От 150 фотографий</p>
-            <p>Ролик 60-90 секунд</p>
-            <p>1 вертикальное видео</p>
-          </div>
-        </details>
-        <details class="rate">
-          <summary>
-            <span class="rate-index">02</span>
-            <span class="rate-name">Контент День</span>
-            <span class="rate-hours">до 6 часов</span>
-            <span class="rate-price">125 000 ₽</span>
-            <span class="rate-mark" aria-hidden="true"></span>
-          </summary>
-          <div class="rate-body">
-            <p>Фотограф + оператор</p>
-            <p>От 300 фотографий</p>
-            <p>Фильм 2-3 минуты</p>
-            <p>3 вертикальных видео</p>
-          </div>
-        </details>
-        <details class="rate">
-          <summary>
-            <span class="rate-index">03</span>
-            <span class="rate-name">Полное покрытие</span>
-            <span class="rate-hours">до 8 часов</span>
-            <span class="rate-price">165 000 ₽</span>
-            <span class="rate-mark" aria-hidden="true"></span>
-          </summary>
-          <div class="rate-body">
-            <p>Фотограф + 2 оператора или продюсер</p>
-            <p>От 400 фотографий</p>
-            <p>Фильм 3-5 минут</p>
-            <p>5 вертикальных видео + запись звука</p>
-          </div>
-        </details>
-      </div>
-      <div class="entry-products">
-        <span>Фото отдельно от 25 000 ₽</span>
-        <span>Видео отдельно от 55 000 ₽</span>
-      </div>
+      <div class="format-foot"><span>Фото отдельно: от 25 000 ₽</span><span>Видео отдельно: от 55 000 ₽</span><a href="#brief">Нужна другая конфигурация? ↗</a></div>
     </section>
 
-    <section class="closing-media" aria-label="Место для завершающего видео">
-      <div class="closing-media-slot media-slot"></div>
-    </section>
+    <section class="statement" aria-label="Позиционирование"><div class="statement-track"><span>WE SHOOT THE EVENT</span><b>•</b><span>YOU KEEP THE MOMENTUM</span><b>•</b><span>WE SHOOT THE EVENT</span><b>•</b><span>YOU KEEP THE MOMENTUM</span><b>•</b></div></section>
 
-    <section class="inquiry" id="inquiry" aria-labelledby="inquiry-title">
-      <div class="inquiry-head">
-        <span>05 / Новый проект</span>
-        <h2 id="inquiry-title">Пришлите дату<br />и программу</h2>
-        <p>Вернёмся с составом команды и предварительной сметой.</p>
+    <section class="closing-media" aria-label="Место для завершающего видео"><div class="closing-media-slot media-slot"></div></section>
+
+    <section class="brief" id="brief" aria-labelledby="brief-title">
+      <div class="brief-copy">
+        <div class="section-index light">05 / NEW PROJECT</div>
+        <h2 id="brief-title">ЕСТЬ ДАТА?<br />СОБЕРЁМ СЪЁМКУ.</h2>
+        <p>Пришлите формат события, дату и длительность. В ответ нужен состав команды и предварительная смета, а не длинная переписка.</p>
       </div>
-      <form class="inquiry-form" data-form>
-        <label>
-          <span>Как к вам обращаться</span>
-          <input type="text" name="name" autocomplete="name" required />
-        </label>
-        <label>
-          <span>Телефон или Telegram</span>
-          <input type="text" name="contact" required />
-        </label>
-        <label>
-          <span>Дата и формат события</span>
-          <input type="text" name="event" />
-        </label>
-        <button type="submit"><span>Отправить запрос</span><b>↗</b></button>
+      <form class="brief-form" data-form>
+        <div class="brief-field"><label for="name">01 / Имя</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" required /></div>
+        <div class="brief-field"><label for="contact">02 / Контакт</label><input id="contact" name="contact" type="text" placeholder="Телефон или Telegram" required /></div>
+        <div class="brief-field"><label for="event">03 / Событие</label><input id="event" name="event" type="text" placeholder="Дата, формат, длительность" /></div>
+        <button class="submit-button" type="submit"><span>Получить расчёт</span><b>↗</b></button>
+        <p class="form-note">Отправляя запрос, вы соглашаетесь с политикой обработки персональных данных.</p>
         <p class="form-status" role="status" aria-live="polite"></p>
       </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="brand footer-brand" href="#top"><span>[ НАЗВАНИЕ ]</span><small>EVENT CONTENT PRODUCTION</small></a>
-    <p>Москва / работаем по России</p>
-    <div><a href="#">Telegram</a><a href="#">Телефон</a><a href="#">E-mail</a></div>
-    <p>© 2026</p>
-  </footer>
-
+  <footer class="site-footer"><a class="footer-brand" href="#top">[НАЗВАНИЕ]</a><p>Москва / работаем по России</p><div class="footer-links"><a href="#">Telegram</a><a href="#">Телефон</a><a href="#">E-mail</a></div><p>© 2026</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
