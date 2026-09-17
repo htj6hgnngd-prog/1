@@ -1,123 +1,94 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#f4f1ea" />
-  <meta name="description" content="FRAME Moscow — премиальная продакшн-студия событий: фото, видео и быстрый контент." />
-  <title>FRAME Moscow — Event Content Production</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Manrope:wght@400;500&family=Italianno&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f5f2e9" />
+  <meta name="description" content="Портфолио: YouTube, видео, AI, фото, продукт и веб." />
+  <title>Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <main class="page" id="top">
-    <section class="hero section-light">
-      <header class="topbar">
-        <a class="logo" href="#top" aria-label="FRAME Moscow">
-          <span>FRAME</span>
-          <small>Moscow</small>
-        </a>
-        <div class="top-note">СОБЫТИЯ<br>ЛЮДИ<br>СМЫСЛЫ</div>
-        <nav class="nav" aria-label="Основная навигация">
-          <a href="#about">О СТУДИИ</a>
-          <a href="#services">УСЛУГИ</a>
-          <a href="#projects">РАБОТЫ</a>
-          <a href="#contacts">КОНТАКТЫ</a>
-        </nav>
-        <div class="location">МОСКВА, РОССИЯ</div>
-      </header>
+  <header class="top-navigation">
+    <nav class="nav-grid" aria-label="Разделы портфолио">
+      <button class="is-active" data-target="youtube">ЮТУБ</button>
+      <button data-target="video">ВИДЕО</button>
+      <button data-target="ai">ИИ</button>
+      <button data-target="photo">ФОТО</button>
+      <button data-target="product">ПРОДУКТ</button>
+      <button data-target="site">САЙТ</button>
+    </nav>
+  </header>
 
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <h1>БОЛЬШЕ<br><span>ЧЕМ</span><br>СОБЫТИЯ</h1>
-          <div class="hero-subline">
-            <p>ПРЕМИАЛЬНАЯ<br>ПРОДАКШН-СТУДИЯ<br>В МОСКВЕ.</p>
-            <a href="#contacts">ОБСУДИТЬ ПРОЕКТ <span>⟶</span></a>
-          </div>
-        </div>
-        <div class="hero-middle-copy">
-          <p>ФОТО, ФИЛЬМ.<br>КОНТЕНТ ЗДЕСЬ И СЕЙЧАС.<br>ДЛЯ ТЕХ, КТО СОЗДАЁТ<br>ВАЖНЫЕ МОМЕНТЫ.</p>
-        </div>
-        <div class="hero-art art-hero" aria-label="Место для главного фото или видео">
-          <div class="art-caption">ЛЮДИ<br>ИДЕИ<br>КУЛЬТУРА<br>ДВИЖЕНИЕ.</div>
-          <span class="art-index">01 / 06</span>
+  <main>
+    <section class="hero" aria-labelledby="portfolio-title">
+      <h1 id="portfolio-title">ПОРТФОЛИО</h1>
+    </section>
+
+    <section id="youtube" class="portfolio-section">
+      <div class="section-label">
+        <div class="section-number">01</div>
+        <h2>ЮТУБ</h2>
+        <span class="label-rule"></span>
+      </div>
+      <div class="section-content">
+        <button class="featured-work" id="youtube-featured" type="button" aria-label="Смотреть выбранное видео">
+          <span class="media-frame"><img id="featured-image" src="https://i.ytimg.com/vi/pPTTScpvxMA/maxresdefault.jpg" alt=""><span class="play-mark"><span>▶</span></span></span>
+          <span class="work-meta"><strong id="featured-title">НИЖНИЙ НОВГОРОД</strong><span id="featured-role">ПОЛНАЯ СЪЁМКА</span></span>
+        </button>
+        <div class="work-strip" aria-label="Работы для YouTube">
+          <button class="work-thumb is-selected" type="button" data-video="0"><span class="thumb-image"><img src="https://i.ytimg.com/vi/pPTTScpvxMA/maxresdefault.jpg" alt=""><span class="play-mark play-mark--small"><span>▶</span></span></span><span class="thumb-copy"><strong>НИЖНИЙ НОВГОРОД</strong><span>ПОЛНАЯ СЪЁМКА</span></span></button>
+          <button class="work-thumb" type="button" data-video="1"><span class="thumb-image"><img src="https://i.ytimg.com/vi/RBRXIkmQUJI/maxresdefault.jpg" alt=""><span class="play-mark play-mark--small"><span>▶</span></span></span><span class="thumb-copy"><strong>ТАТАРСТАН</strong><span>ПОЛНАЯ СЪЁМКА</span></span></button>
+          <button class="work-thumb" type="button" data-video="2"><span class="thumb-image"><img src="https://i.ytimg.com/vi/FhwHKvgYwGo/maxresdefault.jpg" alt=""><span class="play-mark play-mark--small"><span>▶</span></span></span><span class="thumb-copy"><strong>МАРКЕТПЛЕЙСЫ</strong><span>СЪЁМКА БОЛЬШЕЙ ЧАСТИ ИНТЕРВЬЮ</span></span></button>
         </div>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <div class="about-dark">
-        <div class="about-copy">
-          <h2>МЫ<br>СОЗДАЁМ<br>ВИЗУАЛЬНУЮ<br>ЦЕННОСТЬ<br>СОБЫТИЙ</h2>
-          <div class="hairline"></div>
-          <p>Снимаем суть. Усиливаем впечатления.<br>Помогаем брендам и людям быть<br>заметнее — сегодня и завтра.</p>
-          <a href="#contacts">О СТУДИИ <span>⟶</span></a>
-        </div>
-        <div class="about-art art-shadow" aria-hidden="true"></div>
-      </div>
+    <section id="video" class="portfolio-section is-pending">
+      <div class="section-label"><div class="section-number">02</div><h2>ВИДЕО</h2><span class="label-rule"></span></div>
+      <div class="section-content"><div class="pending-panel"><span>МАТЕРИАЛЫ ПОЗЖЕ</span></div></div>
+    </section>
 
-      <div class="services" id="services">
-        <div class="vertical-note">ДЛЯ БРЕНДОВ · ЛЮДЕЙ · СОБЫТИЙ · СОЗДАЁМ КУЛЬТУРУ</div>
-        <div class="services-list">
-          <span class="eyebrow">/ УСЛУГИ</span>
-          <ol>
-            <li><span>01</span><b>ФОТОСЪЁМКА</b></li>
-            <li><span>02</span><b>ВИДЕОПРОДАКШН</b></li>
-            <li><span>03</span><b>БЫСТРЫЙ КОНТЕНТ</b></li>
-          </ol>
-          <a href="#projects">ВСЕ УСЛУГИ <span>⟶</span></a>
-        </div>
-        <div class="services-message">
-          <h3>СОБЫТИЯ<br>СЕГОДНЯ.<br>РЕПУТАЦИЯ<br>ЗАВТРА.</h3>
-          <div class="hairline"></div>
-          <p>ДЕЛОВЫЕ СОБЫТИЯ<br>ЧАСТНЫЕ МЕРОПРИЯТИЯ<br>КОНФЕРЕНЦИИ<br>ПРЕМИИ<br>ФОРУМЫ</p>
-        </div>
+    <section id="ai" class="portfolio-section">
+      <div class="section-label"><div class="section-number">03</div><h2>ИИ</h2><span class="label-rule"></span></div>
+      <div class="section-content">
+        <button class="featured-work ai-work" id="ai-featured" type="button" aria-label="Смотреть AI-рекламу">
+          <span class="media-frame ai-media-frame"><iframe src="https://www-ccv.adobe.io/v1/player/ccv/5-9tzVe57JY/embed?api_key=behance1&bgcolor=%23191919" title="Реклама товара для маркетплейса" tabindex="-1" aria-hidden="true"></iframe><span class="ai-cover" aria-hidden="true"></span><span class="play-mark"><span>▶</span></span></span>
+          <span class="work-meta"><strong>РЕКЛАМА ТОВАРА ДЛЯ МАРКЕТПЛЕЙСА</strong><span>ИИ-РОЛИК</span></span>
+        </button>
       </div>
     </section>
 
-    <section class="projects section-light" id="projects">
-      <div class="projects-head">
-        <h2>ВЫБРАННЫЕ<br>ПРОЕКТЫ</h2>
-        <div class="signature">Events<br><span>live forever</span></div>
-        <div class="project-controls"><span>/ 01 — 04</span><button aria-label="Предыдущий">‹</button><button aria-label="Следующий">›</button></div>
-      </div>
-      <div class="projects-grid">
-        <article class="project-card"><div class="project-art art-one"></div><h3>БИЗНЕС-ФОРУМ</h3><p>— ФОТО / ВИДЕО / КОНТЕНТ</p></article>
-        <article class="project-card"><div class="project-art art-two"></div><h3>ЦЕРЕМОНИЯ НАГРАЖДЕНИЯ</h3><p>— ФОТО / ВИДЕО / КОНТЕНТ</p></article>
-        <article class="project-card"><div class="project-art art-three"></div><h3>ЧАСТНОЕ МЕРОПРИЯТИЕ</h3><p>— ФОТО / ВИДЕО / КОНТЕНТ</p></article>
-        <article class="project-card"><div class="project-art art-four"></div><h3>КОНФЕРЕНЦИЯ</h3><p>— ФОТО / ВИДЕО / КОНТЕНТ</p></article>
-        <aside class="projects-side">
-          <div class="hairline"></div>
-          <h3>РАЗНЫЕ<br>СОБЫТИЯ.<br>ОДИН<br>ПОДХОД.</h3>
-          <a href="#contacts">СМОТРЕТЬ ВСЕ<br>ПРОЕКТЫ <span>⟶</span></a>
-        </aside>
-      </div>
+    <section id="photo" class="portfolio-section is-pending">
+      <div class="section-label"><div class="section-number">04</div><h2>ФОТО</h2><span class="label-rule"></span></div>
+      <div class="section-content"><div class="pending-panel"><span>МАТЕРИАЛЫ ПОЗЖЕ</span></div></div>
     </section>
 
-    <section class="contact-row" id="contacts">
-      <div class="cta-panel">
-        <h2>ДАВАЙТЕ<br>СОЗДАДИМ<br>ВАШЕ СОБЫТИЕ<br>ВМЕСТЕ</h2>
-        <a href="mailto:hello@frame.moscow"><span class="hairline"></span> ОСТАВИТЬ ЗАЯВКУ <b>⟶</b></a>
-      </div>
-      <div class="contact-panel">
-        <span class="eyebrow">/ КОНТАКТЫ</span>
-        <h2>МОСКВА</h2>
-        <dl>
-          <div><dt>ПИШИТЕ</dt><dd>hello@frame.moscow</dd></div>
-          <div><dt>ЗВОНИТЕ</dt><dd>+7 495 120-22-33</dd></div>
-          <div><dt>ПРИХОДИТЕ</dt><dd>Б. Якиманка, 26</dd></div>
-        </dl>
-        <div class="socials"><a href="#">TG</a><span>/</span><a href="#">VK</a><span>/</span><a href="#">YT</a><span>/</span><a href="#">IN</a></div>
-      </div>
-      <div class="footer-art art-footer">
-        <p>КОНТЕНТ<br>СЕГОДНЯ.<br>БОЛЬШЕ<br>ЧЕМ<br>ИДЕИ<br>ЗАВТРА.</p>
-        <span class="red-mark"></span>
-        <small>FRAME Moscow © 2026</small>
-      </div>
+    <section id="product" class="portfolio-section is-pending">
+      <div class="section-label"><div class="section-number">05</div><h2>РАЗРАБОТКА ПРОДУКТА</h2><p>ДИРЕКТ ИИ</p><span class="label-rule"></span></div>
+      <div class="section-content"><div class="pending-panel"><span>МАТЕРИАЛЫ ПОЗЖЕ</span></div></div>
+    </section>
+
+    <section id="site" class="portfolio-section is-pending">
+      <div class="section-label"><div class="section-number">06</div><h2>САЙТ</h2><span class="label-rule"></span></div>
+      <div class="section-content"><div class="pending-panel"><span>МАТЕРИАЛЫ ПОЗЖЕ</span></div></div>
     </section>
   </main>
-  <script src="script.js"></script>
+
+  <div class="viewer" id="viewer" hidden role="dialog" aria-modal="true" aria-label="Просмотр видео">
+    <div class="viewer-shell">
+      <div class="viewer-header">
+        <div class="viewer-title"><strong id="viewer-title"></strong><span id="viewer-role"></span></div>
+        <div class="viewer-actions"><a id="viewer-source" class="viewer-link" target="_blank" rel="noreferrer">ИСТОЧНИК ↗</a><button id="viewer-close" class="icon-button" type="button" aria-label="Закрыть">×</button></div>
+      </div>
+      <div class="viewer-frame" id="viewer-frame"></div>
+      <div class="viewer-controls" id="viewer-controls"><button class="icon-button" id="viewer-prev" type="button" aria-label="Предыдущее видео">←</button><span id="viewer-count">01 / 03</span><button class="icon-button" id="viewer-next" type="button" aria-label="Следующее видео">→</button></div>
+    </div>
+  </div>
+
+  <script src="/script.js" defer></script>
 </body>
 </html>
