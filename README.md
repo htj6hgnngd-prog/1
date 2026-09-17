@@ -1,9 +1,3 @@
-# Event Content Studio
+# Portfolio site
 
-Clickable design prototype for a Moscow event photo and video production studio.
-
-## Local preview
-
-Run a static server from this directory and open `index.html`.
-
-All photo and video areas are intentionally empty and ready for real media.
+One-page visual portfolio. YouTube and Behance projects open in a large in-page 16:9 viewer. Railway-ready: `npm start`.
